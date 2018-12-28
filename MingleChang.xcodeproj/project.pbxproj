@@ -10,33 +10,35 @@
 		424B8C2821D5CE0E00318210 /* MingleChang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424B8C1E21D5CE0E00318210 /* MingleChang.framework */; };
 		424B8C2D21D5CE0F00318210 /* MingleChangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C2C21D5CE0F00318210 /* MingleChangTests.m */; };
 		424B8C2F21D5CE0F00318210 /* MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C2121D5CE0E00318210 /* MingleChang.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		424B8C3B21D5D00500318210 /* UIView+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C3921D5D00500318210 /* UIView+MingleChang.h */; };
+		424B8C3B21D5D00500318210 /* UIView+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C3921D5D00500318210 /* UIView+MingleChang.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		424B8C3C21D5D00500318210 /* UIView+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C3A21D5D00500318210 /* UIView+MingleChang.m */; };
 		424B8C3D21D5D00500318210 /* UIView+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C3A21D5D00500318210 /* UIView+MingleChang.m */; };
-		424B8C4221D5D11C00318210 /* NSString+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C4021D5D11C00318210 /* NSString+MingleChang.h */; };
+		424B8C4221D5D11C00318210 /* NSString+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C4021D5D11C00318210 /* NSString+MingleChang.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		424B8C4321D5D11C00318210 /* NSString+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C4121D5D11C00318210 /* NSString+MingleChang.m */; };
 		424B8C4421D5D11C00318210 /* NSString+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C4121D5D11C00318210 /* NSString+MingleChang.m */; };
-		424B8C5221D5D29700318210 /* UIColor+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C5021D5D29700318210 /* UIColor+MingleChang.h */; };
+		424B8C5221D5D29700318210 /* UIColor+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C5021D5D29700318210 /* UIColor+MingleChang.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		424B8C5321D5D29700318210 /* UIColor+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C5121D5D29700318210 /* UIColor+MingleChang.m */; };
 		424B8C5421D5D29700318210 /* UIColor+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C5121D5D29700318210 /* UIColor+MingleChang.m */; };
 		424B8C5A21D5D50900318210 /* MCDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C5821D5D50900318210 /* MCDate.m */; };
 		424B8C5B21D5D50900318210 /* MCDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C5821D5D50900318210 /* MCDate.m */; };
-		424B8C5C21D5D50900318210 /* MCDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C5921D5D50900318210 /* MCDate.h */; };
-		424B8C5F21D5D53E00318210 /* MCIgnoreAlphaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C5D21D5D53E00318210 /* MCIgnoreAlphaView.h */; };
+		424B8C5C21D5D50900318210 /* MCDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C5921D5D50900318210 /* MCDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		424B8C5F21D5D53E00318210 /* MCIgnoreAlphaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C5D21D5D53E00318210 /* MCIgnoreAlphaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		424B8C6021D5D53E00318210 /* MCIgnoreAlphaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C5E21D5D53E00318210 /* MCIgnoreAlphaView.m */; };
 		424B8C6121D5D53E00318210 /* MCIgnoreAlphaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C5E21D5D53E00318210 /* MCIgnoreAlphaView.m */; };
-		42A3397B21D5ECFF00A5B90E /* NSMutableArray+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3397921D5ECFF00A5B90E /* NSMutableArray+MingleChang.h */; };
+		42A3397B21D5ECFF00A5B90E /* NSMutableArray+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3397921D5ECFF00A5B90E /* NSMutableArray+MingleChang.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42A3397C21D5ECFF00A5B90E /* NSMutableArray+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3397A21D5ECFF00A5B90E /* NSMutableArray+MingleChang.m */; };
-		42A3397F21D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3397D21D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.h */; };
+		42A3397F21D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3397D21D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42A3398021D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3397E21D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.m */; };
-		42A3398321D5F0F100A5B90E /* NSData+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3398121D5F0F100A5B90E /* NSData+MingleChang.h */; };
+		42A3398321D5F0F100A5B90E /* NSData+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3398121D5F0F100A5B90E /* NSData+MingleChang.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42A3398421D5F0F100A5B90E /* NSData+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3398221D5F0F100A5B90E /* NSData+MingleChang.m */; };
-		42A3398721D5F44B00A5B90E /* UIImage+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3398521D5F44B00A5B90E /* UIImage+MingleChang.h */; };
+		42A3398721D5F44B00A5B90E /* UIImage+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3398521D5F44B00A5B90E /* UIImage+MingleChang.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42A3398821D5F44B00A5B90E /* UIImage+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3398621D5F44B00A5B90E /* UIImage+MingleChang.m */; };
-		42A3398B21D5F7A700A5B90E /* NSDate+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3398921D5F7A700A5B90E /* NSDate+MingleChang.h */; };
+		42A3398B21D5F7A700A5B90E /* NSDate+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3398921D5F7A700A5B90E /* NSDate+MingleChang.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42A3398C21D5F7A700A5B90E /* NSDate+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3398A21D5F7A700A5B90E /* NSDate+MingleChang.m */; };
-		42A3398F21D5F89C00A5B90E /* MCWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3398D21D5F89C00A5B90E /* MCWeakProxy.h */; };
+		42A3398F21D5F89C00A5B90E /* MCWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3398D21D5F89C00A5B90E /* MCWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42A3399021D5F89C00A5B90E /* MCWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3398E21D5F89C00A5B90E /* MCWeakProxy.m */; };
+		42A3399E21D6186100A5B90E /* MCMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3399C21D5F9BE00A5B90E /* MCMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42A3399F21D6186500A5B90E /* MCType.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3399D21D5FE1100A5B90E /* MCType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,18 +194,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A3399F21D6186500A5B90E /* MCType.h in Headers */,
 				42A3397F21D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.h in Headers */,
 				42A3398F21D5F89C00A5B90E /* MCWeakProxy.h in Headers */,
 				42A3397B21D5ECFF00A5B90E /* NSMutableArray+MingleChang.h in Headers */,
 				42A3398721D5F44B00A5B90E /* UIImage+MingleChang.h in Headers */,
-				424B8C5C21D5D50900318210 /* MCDate.h in Headers */,
 				424B8C5221D5D29700318210 /* UIColor+MingleChang.h in Headers */,
-				42A3398321D5F0F100A5B90E /* NSData+MingleChang.h in Headers */,
+				42A3399E21D6186100A5B90E /* MCMacro.h in Headers */,
+				424B8C5C21D5D50900318210 /* MCDate.h in Headers */,
 				424B8C4221D5D11C00318210 /* NSString+MingleChang.h in Headers */,
 				42A3398B21D5F7A700A5B90E /* NSDate+MingleChang.h in Headers */,
-				424B8C2F21D5CE0F00318210 /* MingleChang.h in Headers */,
-				424B8C5F21D5D53E00318210 /* MCIgnoreAlphaView.h in Headers */,
 				424B8C3B21D5D00500318210 /* UIView+MingleChang.h in Headers */,
+				424B8C5F21D5D53E00318210 /* MCIgnoreAlphaView.h in Headers */,
+				42A3398321D5F0F100A5B90E /* NSData+MingleChang.h in Headers */,
+				424B8C2F21D5CE0F00318210 /* MingleChang.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

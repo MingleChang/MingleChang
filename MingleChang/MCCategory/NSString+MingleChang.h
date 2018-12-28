@@ -13,6 +13,21 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSString (MingleChang)
 
 /**
+ 检查是否满足指定的正则表达式
+
+ @param regex 正则表达式
+ @return <#return value description#>
+ */
+- (BOOL)mc_isRegex:(NSString *)regex;
+
+/**
+ 检查是否是合法的身份证号
+
+ @return <#return value description#>
+ */
+- (BOOL)mc_isRealIDCard;
+
+/**
  将中文字符串转为拼音字符串
 
  @return <#return value description#>
@@ -29,6 +44,20 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSDate *)mc_toDateWithFormat:(NSString *)format;
 -(NSDate *)mc_toDateWithFormat:(NSString *)format timeZone:(nullable NSTimeZone *)timeZone;
 
+
+/**
+ MD5加密
+
+ @return <#return value description#>
+ */
+- (NSString *)mc_md5;
+
+/**
+ SHA1加密
+
+ @return <#return value description#>
+ */
+- (NSString*) mc_sha1;
 @end
 
 NS_ASSUME_NONNULL_END

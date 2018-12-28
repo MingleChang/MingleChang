@@ -148,7 +148,13 @@
     return lImage;
 }
 
-
++ (UIImage *)mc_imageWithView:(UIView *)view {
+    UIGraphicsBeginImageContextWithOptions(view.frame.size, NO, 0);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *lResultImage=UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return lResultImage;
+}
 
 #pragma mark - 高斯模糊
 - (UIImage *)mc_applyLightEffect

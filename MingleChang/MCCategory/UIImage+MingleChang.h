@@ -136,6 +136,14 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage *)mc_imageWithColor:(UIColor *)color size:(CGSize)size;
 
 /**
+ 将View上的纹理生成一张UIImage,或者说将View转换为Image
+
+ @param view UIView，用于生成Image的View
+ @return UIImage，绘制后得到的Image
+ */
++ (UIImage *)mc_imageWithView:(UIView *)view;
+
+/**
  对图片进行高斯模糊
  */
 - (UIImage *)mc_applyLightEffect;

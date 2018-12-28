@@ -14,7 +14,7 @@
     return self;
 }
 + (instancetype)weakProxyWithTarget:(id)target {
-    return [[GSGWeakProxy alloc] initWithTarget:target];
+    return [[MCWeakProxy alloc] initWithTarget:target];
 }
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     return _target;
