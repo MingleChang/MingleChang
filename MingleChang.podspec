@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MingleChang"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "MingleChang Used."
 
   # This description is used to generate tags and improve search results.
@@ -89,10 +89,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MingleChang","MingleChang/MingleChang.h","MingleChang/**/*.{h,m}"
+  s.source_files  = "MingleChang/MingleChang.h"
   # s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "MingleChang/MingleChang.h","MingleChang/**/*.h"
+  s.public_header_files = "MingleChang/MingleChang.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -132,5 +132,21 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  s.subspec 'MCCategory' do |ss|
+    ss.source_files = "MingleChang/MCCategory/*.{h,m}"
+    ss.public_header_files = "MingleChang/MCCategory/*.h"
+  end
+
+  s.subspec 'MCFoundation' do |ss|
+    ss.source_files = "MingleChang/MCFoundation/*.{h,m}"
+    ss.public_header_files = "MingleChang/MCFoundation/*.h"
+  end
+
+  s.subspec 'MCKit' do |ss|
+    ss.source_files = "MingleChang/MCKit/*.{h,m}"
+    ss.public_header_files = "MingleChang/MCKit/*.h"
+
+    ss.dependency 'MingleChang/MCCategory'
+  end
 
 end
