@@ -7,10 +7,24 @@
 //
 
 #import "NSString+MingleChang.h"
+#import "NSNumber+MingleChang.h"
+#import "NSData+MingleChang.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 
 @implementation NSString (MingleChang)
+
+- (NSString *)mc_trim {
+    NSCharacterSet *lCharacterSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    NSString *lString = [self stringByTrimmingCharactersInSet:lCharacterSet];
+    return lString;
+}
+
+- (NSNumber *)mc_toNumber {
+    NSNumber *lNumber = [NSNumber mc_numberWithString:self];
+    return lNumber;
+}
+
 - (BOOL)mc_isRegex:(NSString *)regex {
     NSPredicate *lPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
     if (([lPredicate evaluateWithObject:self])) {
@@ -68,28 +82,125 @@
 }
 
 #pragma mark - 加密解密
-- (NSString *)mc_md5 {
-    const char *cStr = [self UTF8String];
-    unsigned char result[CC_MD5_DIGEST_LENGTH];
-    CC_MD5(cStr,(CC_LONG)strlen(cStr), result); // This is the md5 call
-    
-    NSString *lString = @"";
-    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
-        lString = [lString stringByAppendingFormat:@"%02x",result[i]];
-    }
-    return lString;
+- (NSData *)mc_md2Data {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_md2Data];
 }
-
-- (NSString*) mc_sha1 {
-    const char *cStr = [self UTF8String];
-    unsigned char result[CC_SHA1_DIGEST_LENGTH];
-    CC_SHA1(cStr, (CC_LONG)strlen(cStr), result);
-    
-    NSString *lString = @"";
-    for (int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++) {
-        lString = [lString stringByAppendingFormat:@"%02x",result[i]];
-    }
-    return lString;
+- (NSString *)mc_md2String {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_md2String];
+}
+- (NSData *)mc_md4Data {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_md4Data];
+}
+- (NSString *)mc_md4String {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_md4String];
+}
+- (NSData *)mc_md5Data {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_md5Data];
+}
+- (NSString *)mc_md5String {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_md5String];
+}
+- (NSData *)mc_sha1Data {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_sha1Data];
+}
+- (NSString *)mc_sha1String {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_sha1String];
+}
+- (NSData *)mc_sha224Data {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_sha224Data];
+}
+- (NSString *)mc_sha224String {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_sha224String];
+}
+- (NSData *)mc_sha256Data {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_sha256Data];
+}
+- (NSString *)mc_sha256String {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_sha256String];
+}
+- (NSData *)mc_sha384Data {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_sha384Data];
+}
+- (NSString *)mc_sha384String {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_sha384String];
+}
+- (NSData *)mc_sha512Data {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_sha512Data];
+}
+- (NSString *)mc_sha512String {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_sha512String];
+}
+- (NSData *)mc_hmacDataUsingAlg:(CCHmacAlgorithm)algorithm key:(NSData *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacDataUsingAlg:algorithm key:key];
+}
+- (NSString *)mc_hmacStringUsingAlg:(CCHmacAlgorithm)algorithm key:(NSString *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacStringUsingAlg:algorithm key:key];
+}
+- (NSData *)mc_hmacMD5DataWithKey:(NSData *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacMD5DataWithKey:key];
+}
+- (NSString *)mc_hmacMD5StringWithKey:(NSString *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacMD5StringWithKey:key];
+}
+- (NSData *)mc_hmacSHA1DataWithKey:(NSData *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacSHA1DataWithKey:key];
+}
+- (NSString *)mc_hmacSHA1StringWithKey:(NSString *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacSHA1StringWithKey:key];
+}
+- (NSData *)mc_hmacSHA224DataWithKey:(NSData *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacSHA224DataWithKey:key];
+}
+- (NSString *)mc_hmacSHA224StringWithKey:(NSString *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacSHA224StringWithKey:key];
+}
+- (NSData *)mc_hmacSHA256DataWithKey:(NSData *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacSHA256DataWithKey:key];
+}
+- (NSString *)mc_hmacSHA256StringWithKey:(NSString *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacSHA256StringWithKey:key];
+}
+- (NSData *)mc_hmacSHA384DataWithKey:(NSData *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacSHA384DataWithKey:key];
+}
+- (NSString *)mc_hmacSHA384StringWithKey:(NSString *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacSHA384StringWithKey:key];
+}
+- (NSData *)mc_hmacSHA512DataWithKey:(NSData *)key {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacSHA512DataWithKey:key];
+}
+- (NSString *)mc_hmacSHA512StringWithKey:(NSString *)key  {
+    NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [lData mc_hmacSHA512StringWithKey:key];
 }
 
 @end

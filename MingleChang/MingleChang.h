@@ -16,6 +16,9 @@
 #import "NSString+MingleChang.h"
 #import "UIView+MingleChang.h"
 #import "NSDate+MingleChang.h"
+#import "NSArray+MingleChang.h"
+#import "NSNumber+MingleChang.h"
+#import "NSObject+MingleChang.h"
 
 #import "MCType.h"
 #import "MCMacro.h"

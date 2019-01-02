@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4230759421DC9A7000CACA6F /* NSArray+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 4230759221DC9A7000CACA6F /* NSArray+MingleChang.h */; };
+		4230759521DC9A7000CACA6F /* NSArray+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230759321DC9A7000CACA6F /* NSArray+MingleChang.m */; };
+		4230759821DC9D4100CACA6F /* NSNumber+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 4230759621DC9D4100CACA6F /* NSNumber+MingleChang.h */; };
+		4230759921DC9D4100CACA6F /* NSNumber+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230759721DC9D4100CACA6F /* NSNumber+MingleChang.m */; };
+		4230759C21DCB06E00CACA6F /* NSObject+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 4230759A21DCB06E00CACA6F /* NSObject+MingleChang.h */; };
+		4230759D21DCB06E00CACA6F /* NSObject+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230759B21DCB06E00CACA6F /* NSObject+MingleChang.m */; };
 		424B8C2821D5CE0E00318210 /* MingleChang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424B8C1E21D5CE0E00318210 /* MingleChang.framework */; };
 		424B8C2D21D5CE0F00318210 /* MingleChangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 424B8C2C21D5CE0F00318210 /* MingleChangTests.m */; };
 		424B8C2F21D5CE0F00318210 /* MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C2121D5CE0E00318210 /* MingleChang.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4230759221DC9A7000CACA6F /* NSArray+MingleChang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MingleChang.h"; sourceTree = "<group>"; };
+		4230759321DC9A7000CACA6F /* NSArray+MingleChang.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MingleChang.m"; sourceTree = "<group>"; };
+		4230759621DC9D4100CACA6F /* NSNumber+MingleChang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MingleChang.h"; sourceTree = "<group>"; };
+		4230759721DC9D4100CACA6F /* NSNumber+MingleChang.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MingleChang.m"; sourceTree = "<group>"; };
+		4230759A21DCB06E00CACA6F /* NSObject+MingleChang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MingleChang.h"; sourceTree = "<group>"; };
+		4230759B21DCB06E00CACA6F /* NSObject+MingleChang.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MingleChang.m"; sourceTree = "<group>"; };
 		424B8C1E21D5CE0E00318210 /* MingleChang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MingleChang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		424B8C2121D5CE0E00318210 /* MingleChang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MingleChang.h; sourceTree = "<group>"; };
 		424B8C2221D5CE0E00318210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,6 +173,12 @@
 				42A3398221D5F0F100A5B90E /* NSData+MingleChang.m */,
 				42A3398521D5F44B00A5B90E /* UIImage+MingleChang.h */,
 				42A3398621D5F44B00A5B90E /* UIImage+MingleChang.m */,
+				4230759221DC9A7000CACA6F /* NSArray+MingleChang.h */,
+				4230759321DC9A7000CACA6F /* NSArray+MingleChang.m */,
+				4230759621DC9D4100CACA6F /* NSNumber+MingleChang.h */,
+				4230759721DC9D4100CACA6F /* NSNumber+MingleChang.m */,
+				4230759A21DCB06E00CACA6F /* NSObject+MingleChang.h */,
+				4230759B21DCB06E00CACA6F /* NSObject+MingleChang.m */,
 			);
 			path = MCCategory;
 			sourceTree = "<group>";
@@ -195,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A3399F21D6186500A5B90E /* MCType.h in Headers */,
+				4230759421DC9A7000CACA6F /* NSArray+MingleChang.h in Headers */,
 				42A3397F21D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.h in Headers */,
 				42A3398F21D5F89C00A5B90E /* MCWeakProxy.h in Headers */,
 				42A3397B21D5ECFF00A5B90E /* NSMutableArray+MingleChang.h in Headers */,
@@ -205,8 +224,10 @@
 				424B8C4221D5D11C00318210 /* NSString+MingleChang.h in Headers */,
 				42A3398B21D5F7A700A5B90E /* NSDate+MingleChang.h in Headers */,
 				424B8C3B21D5D00500318210 /* UIView+MingleChang.h in Headers */,
+				4230759C21DCB06E00CACA6F /* NSObject+MingleChang.h in Headers */,
 				424B8C5F21D5D53E00318210 /* MCIgnoreAlphaView.h in Headers */,
 				42A3398321D5F0F100A5B90E /* NSData+MingleChang.h in Headers */,
+				4230759821DC9D4100CACA6F /* NSNumber+MingleChang.h in Headers */,
 				424B8C2F21D5CE0F00318210 /* MingleChang.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,12 +332,15 @@
 				424B8C5321D5D29700318210 /* UIColor+MingleChang.m in Sources */,
 				424B8C5A21D5D50900318210 /* MCDate.m in Sources */,
 				42A3398421D5F0F100A5B90E /* NSData+MingleChang.m in Sources */,
+				4230759521DC9A7000CACA6F /* NSArray+MingleChang.m in Sources */,
 				42A3398021D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.m in Sources */,
 				424B8C6021D5D53E00318210 /* MCIgnoreAlphaView.m in Sources */,
 				42A3399021D5F89C00A5B90E /* MCWeakProxy.m in Sources */,
 				42A3398821D5F44B00A5B90E /* UIImage+MingleChang.m in Sources */,
+				4230759D21DCB06E00CACA6F /* NSObject+MingleChang.m in Sources */,
 				42A3397C21D5ECFF00A5B90E /* NSMutableArray+MingleChang.m in Sources */,
 				424B8C3C21D5D00500318210 /* UIView+MingleChang.m in Sources */,
+				4230759921DC9D4100CACA6F /* NSNumber+MingleChang.m in Sources */,
 				424B8C4321D5D11C00318210 /* NSString+MingleChang.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
