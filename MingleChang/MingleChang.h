@@ -6,8 +6,6 @@
 //  Copyright © 2018 mingle. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 #import "UIImage+MingleChang.h"
 #import "NSData+MingleChang.h"
 #import "NSMutableDictionary+MingleChang.h"
@@ -24,6 +22,7 @@
 #import "MCMacro.h"
 #import "MCWeakProxy.h"
 #import "MCDate.h"
+#import "MCDevice.h"
 
 #import "MCIgnoreAlphaView.h"
 

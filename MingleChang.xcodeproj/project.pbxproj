@@ -45,6 +45,8 @@
 		42A3399021D5F89C00A5B90E /* MCWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A3398E21D5F89C00A5B90E /* MCWeakProxy.m */; };
 		42A3399E21D6186100A5B90E /* MCMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3399C21D5F9BE00A5B90E /* MCMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42A3399F21D6186500A5B90E /* MCType.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3399D21D5FE1100A5B90E /* MCType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42A6618721DD9C2100EACB86 /* MCDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A6618521DD9C2100EACB86 /* MCDevice.h */; };
+		42A6618821DD9C2100EACB86 /* MCDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A6618621DD9C2100EACB86 /* MCDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		42A3398E21D5F89C00A5B90E /* MCWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCWeakProxy.m; sourceTree = "<group>"; };
 		42A3399C21D5F9BE00A5B90E /* MCMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMacro.h; sourceTree = "<group>"; };
 		42A3399D21D5FE1100A5B90E /* MCType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCType.h; sourceTree = "<group>"; };
+		42A6618521DD9C2100EACB86 /* MCDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCDevice.h; sourceTree = "<group>"; };
+		42A6618621DD9C2100EACB86 /* MCDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCDevice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 				42A3398E21D5F89C00A5B90E /* MCWeakProxy.m */,
 				42A3399C21D5F9BE00A5B90E /* MCMacro.h */,
 				42A3399D21D5FE1100A5B90E /* MCType.h */,
+				42A6618521DD9C2100EACB86 /* MCDevice.h */,
+				42A6618621DD9C2100EACB86 /* MCDevice.m */,
 			);
 			path = MCFoundation;
 			sourceTree = "<group>";
@@ -214,6 +220,7 @@
 			files = (
 				42A3399F21D6186500A5B90E /* MCType.h in Headers */,
 				4230759421DC9A7000CACA6F /* NSArray+MingleChang.h in Headers */,
+				42A6618721DD9C2100EACB86 /* MCDevice.h in Headers */,
 				42A3397F21D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.h in Headers */,
 				42A3398F21D5F89C00A5B90E /* MCWeakProxy.h in Headers */,
 				42A3397B21D5ECFF00A5B90E /* NSMutableArray+MingleChang.h in Headers */,
@@ -331,6 +338,7 @@
 				42A3398C21D5F7A700A5B90E /* NSDate+MingleChang.m in Sources */,
 				424B8C5321D5D29700318210 /* UIColor+MingleChang.m in Sources */,
 				424B8C5A21D5D50900318210 /* MCDate.m in Sources */,
+				42A6618821DD9C2100EACB86 /* MCDevice.m in Sources */,
 				42A3398421D5F0F100A5B90E /* NSData+MingleChang.m in Sources */,
 				4230759521DC9A7000CACA6F /* NSArray+MingleChang.m in Sources */,
 				42A3398021D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.m in Sources */,
