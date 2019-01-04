@@ -24,6 +24,12 @@
 + (NSString *)buildVersion {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
 }
++ (BOOL)iPhone {
+    return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone;
+}
++ (BOOL)iPad {
+    return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+}
 + (BOOL)isSimulator {
 #if TARGET_OS_SIMULATOR
     return YES;

@@ -6,7 +6,7 @@
 //  Copyright © 2019 mingle. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,7 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)bundleIdentifier;
 + (NSString *)appVersion;
 + (NSString *)buildVersion;
-
++ (BOOL)iPhone;
++ (BOOL)iPad;
 /**
  是否是模拟器
 
