@@ -151,6 +151,7 @@
         return _maskView;
     }
     _maskView = [[UIControl alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _maskView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.3];
     [_maskView addTarget:self action:@selector(maskViewClick:) forControlEvents:UIControlEventTouchUpInside];
     return _maskView;
 }
