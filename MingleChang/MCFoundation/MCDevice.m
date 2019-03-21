@@ -13,16 +13,36 @@
 
 @implementation MCDevice
 + (NSString *)bundleName {
-    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+    static NSString *lBundelName = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lBundelName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+    });
+    return lBundelName;
 }
 + (NSString *)bundleIdentifier {
-    return [[NSBundle mainBundle] bundleIdentifier];
+    static NSString *lBundleIdentifier = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lBundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+    });
+    return lBundleIdentifier;
 }
 + (NSString *)appVersion {
-    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    static NSString *lAppVersion = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lAppVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    });
+    return lAppVersion;
 }
 + (NSString *)buildVersion {
-    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+    static NSString *lBuildVersion = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lBuildVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+    });
+    return lBuildVersion;
 }
 + (BOOL)iPhone {
     return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone;
