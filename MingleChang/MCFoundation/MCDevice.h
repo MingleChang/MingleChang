@@ -39,6 +39,19 @@ NS_ASSUME_NONNULL_BEGIN
  @return <#return value description#>
  */
 + (BOOL)isPirated;
+
+/**
+ 物理一个像素
+
+ @return <#return value description#>
+ */
++ (CGFloat)onePixel;
+
++ (CGRect)screenBounds;
++ (CGSize)screenSize;
++ (CGFloat)screenWidth;
++ (CGFloat)screenHeight;
+
 @end
 
 NS_ASSUME_NONNULL_END

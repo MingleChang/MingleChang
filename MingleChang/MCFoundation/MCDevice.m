@@ -133,6 +133,46 @@
     return NO;
 }
 
++ (CGFloat)onePixel {
+    static CGFloat lOnePixel;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lOnePixel = 1.0 / [UIScreen mainScreen].scale;
+    });
+    return lOnePixel;
+}
++ (CGRect)screenBounds {
+    static CGRect lBounds;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lBounds = [UIScreen mainScreen].bounds;
+    });
+    return lBounds;
+}
++ (CGSize)screenSize {
+    static CGSize lSize;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lSize = [UIScreen mainScreen].bounds.size;
+    });
+    return lSize;
+}
++ (CGFloat)screenWidth {
+    static CGFloat lWidth;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lWidth = [UIScreen mainScreen].bounds.size.width;
+    });
+    return lWidth;
+}
++ (CGFloat)screenHeight {
+    static CGFloat lHeight;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lHeight = [UIScreen mainScreen].bounds.size.height;
+    });
+    return lHeight;
+}
 #pragma mark - Private
 + (BOOL)_fileExistInMainBundle:(NSString *)name {
     NSString *lBundlePath = [[NSBundle mainBundle] bundlePath];

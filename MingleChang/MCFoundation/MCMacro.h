@@ -20,13 +20,13 @@
 #define MC_RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]//宏定义颜色获取方法，alpha可设置
 
 //一个像素
-#define MC_ONE_PIXEL 1.0 / [UIScreen mainScreen].scale
+#define MC_ONE_PIXEL [MCDevice onePixel]
 
 //设备screen尺寸信息
-#define MC_SCREEN_BOUNDS [UIScreen mainScreen].bounds
-#define MC_SCREEN_SIZE [UIScreen mainScreen].bounds.size
-#define MC_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define MC_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define MC_SCREEN_BOUNDS [MCDevice screenBounds]
+#define MC_SCREEN_SIZE [MCDevice screenSize]
+#define MC_SCREEN_WIDTH [MCDevice screenWidth]
+#define MC_SCREEN_HEIGHT [MCDevice screenHeight]
 
 #define MC_LOCK(x) dispatch_semaphore_wait(x, DISPATCH_TIME_FOREVER);
 #define MC_UNLOCK(x) dispatch_semaphore_signal(x);
