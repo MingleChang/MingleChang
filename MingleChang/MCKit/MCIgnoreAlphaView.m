@@ -9,6 +9,10 @@
 #import "MCIgnoreAlphaView.h"
 #import "UIView+MingleChang.h"
 
+@interface MCIgnoreAlphaView ()
+
+@end
+
 @implementation MCIgnoreAlphaView
 #pragma mark - Init
 -(instancetype)init{
@@ -39,11 +43,11 @@
 //    }
 //    return self;
 //}
--(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
-    CGFloat alpha=[self mc_alphaOfPoint:point];
-    if (alpha==0) {
-        return NO;
-    }
-    return YES;
-}
+//-(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+//    CGFloat alpha=[self mc_alphaOfPoint:point];
+//    if (alpha==0) {
+//        return NO;
+//    }
+//    return YES;
+//}
 @end
