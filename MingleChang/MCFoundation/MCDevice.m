@@ -142,36 +142,16 @@
     return lOnePixel;
 }
 + (CGRect)screenBounds {
-    static CGRect lBounds;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        lBounds = [UIScreen mainScreen].bounds;
-    });
-    return lBounds;
+    return [UIScreen mainScreen].bounds;
 }
 + (CGSize)screenSize {
-    static CGSize lSize;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        lSize = [UIScreen mainScreen].bounds.size;
-    });
-    return lSize;
+    return [UIScreen mainScreen].bounds.size;
 }
 + (CGFloat)screenWidth {
-    static CGFloat lWidth;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        lWidth = [UIScreen mainScreen].bounds.size.width;
-    });
-    return lWidth;
+    return [UIScreen mainScreen].bounds.size.width;
 }
 + (CGFloat)screenHeight {
-    static CGFloat lHeight;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        lHeight = [UIScreen mainScreen].bounds.size.height;
-    });
-    return lHeight;
+    return [UIScreen mainScreen].bounds.size.height;
 }
 #pragma mark - Private
 + (BOOL)_fileExistInMainBundle:(NSString *)name {
