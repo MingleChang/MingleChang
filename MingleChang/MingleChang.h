@@ -20,6 +20,7 @@
 #import "NSArray+MingleChang.h"
 #import "NSNumber+MingleChang.h"
 #import "NSObject+MingleChang.h"
+#import "NSURL+MingleChang.h"
 
 #import "MCType.h"
 #import "MCMacro.h"
@@ -29,6 +30,7 @@
 
 #import "MCIgnoreAlphaView.h"
 #import "MCBaseAlertView.h"
+#import "MCDatePickerView.h"
 
 //! Project version number for MingleChang.
 FOUNDATION_EXPORT double MingleChangVersionNumber;
