@@ -44,6 +44,8 @@
 		8264FA0A227E81010084664D /* MCIgnoreAlphaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 424B8C5D21D5D53E00318210 /* MCIgnoreAlphaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		827FA1EF22B37E6F00B84B93 /* MCDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 827FA1ED22B37E6F00B84B93 /* MCDatePickerView.h */; };
 		827FA1F022B37E6F00B84B93 /* MCDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 827FA1EE22B37E6F00B84B93 /* MCDatePickerView.m */; };
+		827FA1F322B3806400B84B93 /* NSURL+MingleChang.h in Headers */ = {isa = PBXBuildFile; fileRef = 827FA1F122B3806400B84B93 /* NSURL+MingleChang.h */; };
+		827FA1F422B3806400B84B93 /* NSURL+MingleChang.m in Sources */ = {isa = PBXBuildFile; fileRef = 827FA1F222B3806400B84B93 /* NSURL+MingleChang.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		42A6618621DD9C2100EACB86 /* MCDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCDevice.m; sourceTree = "<group>"; };
 		827FA1ED22B37E6F00B84B93 /* MCDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCDatePickerView.h; sourceTree = "<group>"; };
 		827FA1EE22B37E6F00B84B93 /* MCDatePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCDatePickerView.m; sourceTree = "<group>"; };
+		827FA1F122B3806400B84B93 /* NSURL+MingleChang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+MingleChang.h"; sourceTree = "<group>"; };
+		827FA1F222B3806400B84B93 /* NSURL+MingleChang.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MingleChang.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 				4230759721DC9D4100CACA6F /* NSNumber+MingleChang.m */,
 				4230759A21DCB06E00CACA6F /* NSObject+MingleChang.h */,
 				4230759B21DCB06E00CACA6F /* NSObject+MingleChang.m */,
+				827FA1F122B3806400B84B93 /* NSURL+MingleChang.h */,
+				827FA1F222B3806400B84B93 /* NSURL+MingleChang.m */,
 			);
 			path = MCCategory;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 				42A3397F21D5EFAA00A5B90E /* NSMutableDictionary+MingleChang.h in Headers */,
 				42A3398F21D5F89C00A5B90E /* MCWeakProxy.h in Headers */,
 				42A3397B21D5ECFF00A5B90E /* NSMutableArray+MingleChang.h in Headers */,
+				827FA1F322B3806400B84B93 /* NSURL+MingleChang.h in Headers */,
 				42A3398721D5F44B00A5B90E /* UIImage+MingleChang.h in Headers */,
 				424B8C5221D5D29700318210 /* UIColor+MingleChang.h in Headers */,
 				42A3399E21D6186100A5B90E /* MCMacro.h in Headers */,
@@ -352,6 +359,7 @@
 				424B8C6021D5D53E00318210 /* MCIgnoreAlphaView.m in Sources */,
 				42A3399021D5F89C00A5B90E /* MCWeakProxy.m in Sources */,
 				42A3398821D5F44B00A5B90E /* UIImage+MingleChang.m in Sources */,
+				827FA1F422B3806400B84B93 /* NSURL+MingleChang.m in Sources */,
 				42594D8B21E2F5EF00C37A3C /* MCBaseAlertView.m in Sources */,
 				4230759D21DCB06E00CACA6F /* NSObject+MingleChang.m in Sources */,
 				42A3397C21D5ECFF00A5B90E /* NSMutableArray+MingleChang.m in Sources */,

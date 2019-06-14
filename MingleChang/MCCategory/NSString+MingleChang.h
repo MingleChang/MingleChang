@@ -60,6 +60,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSDate *)mc_toDateWithFormat:(NSString *)format timeZone:(nullable NSTimeZone *)timeZone;
 
 //加密和解密
+- (NSString *)mc_urlEncode;
+- (NSString *)mc_urlDecode;
 - (NSData *)mc_md2Data;
 - (NSString *)mc_md2String;
 - (NSData *)mc_md4Data;

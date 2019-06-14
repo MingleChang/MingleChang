@@ -82,6 +82,12 @@
 }
 
 #pragma mark - 加密解密
+- (NSString *)mc_urlEncode {
+    return [self stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
+- (NSString *)mc_urlDecode {
+    return [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
 - (NSData *)mc_md2Data {
     NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
     return [lData mc_md2Data];
