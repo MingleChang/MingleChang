@@ -92,22 +92,22 @@
 - (NSString *)titleForRow:(NSInteger)row type:(MCDatePickerType)type {
     switch (type) {
         case MCDatePickerTypeYear:{
-            return [NSString stringWithFormat:@"%li年", MIN_YEAR + row];
+            return [NSString stringWithFormat:@"%li年", (long)(MIN_YEAR + row)];
         }break;
         case MCDatePickerTypeMonth:{
-            return [NSString stringWithFormat:@"%li月", row + 1];
+            return [NSString stringWithFormat:@"%li月", (long)(row + 1)];
         }break;
         case MCDatePickerTypeDay:{
-            return [NSString stringWithFormat:@"%li日", row + 1];
+            return [NSString stringWithFormat:@"%li日", (long)(row + 1)];
         }break;
         case MCDatePickerTypeHour:{
-            return [NSString stringWithFormat:@"%02li时", row];
+            return [NSString stringWithFormat:@"%02li时", (long)row];
         }break;
         case MCDatePickerTypeMinute:{
-            return [NSString stringWithFormat:@"%02li分", row];
+            return [NSString stringWithFormat:@"%02li分", (long)row];
         }break;
         case MCDatePickerTypeSecond:{
-            return [NSString stringWithFormat:@"%02li秒", row];
+            return [NSString stringWithFormat:@"%02li秒", (long)row];
         }break;
         default:{
             return 0;
