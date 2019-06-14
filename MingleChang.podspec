@@ -147,6 +147,7 @@ Pod::Spec.new do |s|
     ss.public_header_files = "MingleChang/MCKit/*.h"
 
     ss.dependency 'MingleChang/MCCategory'
+    ss.dependency 'MingleChang/MCFoundation'
   end
 
 end

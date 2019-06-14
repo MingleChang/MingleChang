@@ -60,10 +60,10 @@
 }
 
 - (NSString *)mc_toPinyin {
-    NSMutableString *str = [[NSMutableString alloc]initWithString:self];
-    CFStringTransform((__bridge CFMutableStringRef)str, NULL, kCFStringTransformMandarinLatin, NO);
-    CFStringTransform((__bridge CFMutableStringRef)str, NULL, kCFStringTransformStripDiacritics, NO);
-    return [str copy];
+    NSMutableString *lString = [[NSMutableString alloc]initWithString:self];
+    CFStringTransform((__bridge CFMutableStringRef)lString, NULL, kCFStringTransformMandarinLatin, NO);
+    CFStringTransform((__bridge CFMutableStringRef)lString, NULL, kCFStringTransformStripDiacritics, NO);
+    return [lString copy];
 }
 
 #pragma mark - Date
