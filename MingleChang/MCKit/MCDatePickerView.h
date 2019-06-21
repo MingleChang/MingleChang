@@ -20,6 +20,10 @@ typedef NS_OPTIONS(NSUInteger, MCDatePickerType) {
 @interface MCDatePickerView : UIView
 @property (nonatomic, assign)MCDatePickerType type;
 @property (nonatomic, strong)NSDate *date;
+@property (nonatomic, strong)NSDate *minDate;
+@property (nonatomic, strong)NSDate *maxDate;
+
+- (void)setDate:(NSDate * _Nullable)date minDate:(NSDate * _Nullable)minDate maxDate:(NSDate * _Nullable)maxDate;
 @end
 
 NS_ASSUME_NONNULL_END
