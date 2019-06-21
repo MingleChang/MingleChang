@@ -83,10 +83,18 @@
 
 #pragma mark - 加密解密
 - (NSString *)mc_urlEncode {
-    return [self stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSMutableCharacterSet *lCharacterSet = [NSMutableCharacterSet characterSetWithCharactersInString:@"?!@#$^&%*+,:;='\"`<>()[]{}/\\| "];
+    [lCharacterSet formUnionWithCharacterSet:[NSCharacterSet URLUserAllowedCharacterSet]];
+    [lCharacterSet formUnionWithCharacterSet:[NSCharacterSet URLPasswordAllowedCharacterSet]];
+    [lCharacterSet formUnionWithCharacterSet:[NSCharacterSet URLHostAllowedCharacterSet]];
+    [lCharacterSet formUnionWithCharacterSet:[NSCharacterSet URLPathAllowedCharacterSet]];
+    [lCharacterSet formUnionWithCharacterSet:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    [lCharacterSet formUnionWithCharacterSet:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+    NSString *lString = [self stringByAddingPercentEncodingWithAllowedCharacters:lCharacterSet];
+    return lString;
 }
 - (NSString *)mc_urlDecode {
-    return [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    return [self stringByRemovingPercentEncoding];
 }
 - (NSData *)mc_md2Data {
     NSData *lData = [self dataUsingEncoding:NSUTF8StringEncoding];
