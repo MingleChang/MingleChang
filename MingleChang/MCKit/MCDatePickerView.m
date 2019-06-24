@@ -129,22 +129,22 @@
 - (NSString *)titleForRow:(NSInteger)row type:(MCDatePickerType)type {
     switch (type) {
         case MCDatePickerTypeYear:{
-            return [NSString stringWithFormat:@"%li年", row + self.minYear];
+            return [NSString stringWithFormat:@"%i年", (int)(row + self.minYear)];
         }break;
         case MCDatePickerTypeMonth:{
-            return [NSString stringWithFormat:@"%li月", row + self.minMonth];
+            return [NSString stringWithFormat:@"%i月", (int)(row + self.minMonth)];
         }break;
         case MCDatePickerTypeDay:{
-            return [NSString stringWithFormat:@"%li日", row + self.minDay];
+            return [NSString stringWithFormat:@"%i日", (int)(row + self.minDay)];
         }break;
         case MCDatePickerTypeHour:{
-            return [NSString stringWithFormat:@"%02li时", row + self.minHour];
+            return [NSString stringWithFormat:@"%02i时", (int)(row + self.minHour)];
         }break;
         case MCDatePickerTypeMinute:{
-            return [NSString stringWithFormat:@"%02li分", row + self.minMinute];
+            return [NSString stringWithFormat:@"%02i分", (int)(row + self.minMinute)];
         }break;
         case MCDatePickerTypeSecond:{
-            return [NSString stringWithFormat:@"%02li秒", row + self.minSecond];
+            return [NSString stringWithFormat:@"%02i秒", (int)(row + self.minSecond)];
         }break;
         default:{
             return 0;
@@ -381,7 +381,6 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     MCDatePickerType lType = [self typeForComponent:component];
     [self selectRow:row type:lType];
-    NSLog(@"%@\nDate: %@", self.selectedDate, self.selectedDate.date);
 }
 #pragma mark - Configure
 - (void)configure {
