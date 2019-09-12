@@ -79,4 +79,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)dismissAnimationCompletion:(nullable void (^)(void))completion;
 @end
 
+@interface MCAlertManager : NSObject
+
+@property (nonatomic, strong)UIView *superView;
+
+@end
+
 NS_ASSUME_NONNULL_END

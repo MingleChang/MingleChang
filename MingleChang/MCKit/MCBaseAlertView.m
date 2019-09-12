@@ -9,7 +9,7 @@
 #import "MCBaseAlertView.h"
 
 
-@interface MCAlertManager : NSObject
+@interface MCAlertManager ()
 
 @property (nonatomic, strong)UIControl *maskView;
 @property (nonatomic, strong)NSMutableArray *alertArray;
@@ -97,7 +97,7 @@
         return;
     }
     if (self.maskView.superview == nil) {
-        [[UIApplication sharedApplication].keyWindow addSubview:self.maskView];
+        [self.superView addSubview:self.maskView];
     }
     [self.maskView addSubview:self.showAlertView];
     [self.showAlertView initializeLayoutToSuperView:self.maskView];
@@ -146,6 +146,12 @@
 }
 
 #pragma mark - Setter And Getter
+- (UIView *)superView {
+    if (_superView) {
+        return _superView;
+    }
+    return [UIApplication sharedApplication].keyWindow;
+}
 - (UIControl *)maskView {
     if (_maskView) {
         return _maskView;

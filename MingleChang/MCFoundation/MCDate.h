@@ -21,6 +21,7 @@
 @property(nonatomic,assign)NSInteger hour;
 @property(nonatomic,assign)NSInteger minute;
 @property(nonatomic,assign)NSInteger second;
+@property(nonatomic,assign)NSInteger nanosecond
 @property(nonatomic,assign)NSInteger weekday;
 @property(nonatomic,assign)NSInteger weekdayOrdinal;
 @property(nonatomic,assign)NSInteger weekOfMonth;

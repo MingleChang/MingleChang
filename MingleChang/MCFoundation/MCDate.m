@@ -145,6 +145,13 @@ const NSInteger SECONDS_IN_MINUTE = 60;
     self.dateComponent.second=second;
     self.date=[self.calendar dateFromComponents:self.dateComponent];
 }
+- (NSInteger)nanosecond {
+    return self.dateComponent.nanosecond;
+}
+- (void)setNanosecond:(NSInteger)nanosecond {
+    self.dateComponent.nanosecond=nanosecond;
+    self.date=[self.calendar dateFromComponents:self.dateComponent];
+}
 -(NSInteger)weekday{
     return self.dateComponent.weekday;
 }
