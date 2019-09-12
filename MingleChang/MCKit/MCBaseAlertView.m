@@ -11,6 +11,7 @@
 
 @interface MCAlertManager ()
 
+@property (nonatomic, strong)UIView *superView;
 @property (nonatomic, strong)UIControl *maskView;
 @property (nonatomic, strong)NSMutableArray *alertArray;
 @property (nonatomic, weak)MCBaseAlertView *showAlertView;
@@ -147,6 +148,9 @@
 
 #pragma mark - Setter And Getter
 - (UIView *)superView {
+    if (self.superViewBlock) {
+        _superView = self.superViewBlock();
+    }
     if (_superView) {
         return _superView;
     }

@@ -80,9 +80,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface MCAlertManager : NSObject
-
-@property (nonatomic, strong)UIView *superView;
-
+@property (nonatomic, copy)UIView *(^superViewBlock)(void);
 @end
 
 NS_ASSUME_NONNULL_END
